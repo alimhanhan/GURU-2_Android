@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.widget.Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:background="#00ffff"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:visibility="visible"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="World"
+        android:background="#00aaaa"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:enabled="true"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:background="#000fab"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy"
+        android:background="#00ff00"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love"
+        android:background="#00aa00"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:clickable="false"
+        />
+
+
+
+
+</LinearLayout>
