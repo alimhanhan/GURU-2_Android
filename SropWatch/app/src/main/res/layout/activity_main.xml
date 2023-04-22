@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="아림의 타이머"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="00 : 00"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekerBar"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekerBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="3600"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            app:layout_constraintBottom_toTopOf="@+id/start"
+        />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start"
+            android:text="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekerBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stop"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:text="stop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekerBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/start"
+            />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
